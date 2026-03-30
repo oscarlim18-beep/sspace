@@ -1,0 +1,142 @@
+.process-banner{
+  background:
+    linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
+    url('../image/process-banner.jpg') center/cover no-repeat;
+}
+
+.process-intro{
+  background:#fff;
+}
+
+.process-timeline-section{
+  position:relative;
+  background:#f8f9fa;
+}
+
+.process-timeline-section .container{
+  position:relative;
+  max-width:950px;
+}
+
+.process-line{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:32px;
+  width:2px;
+  background:rgba(25,135,84,0.18);
+}
+
+.process-step{
+  position:relative;
+  display:flex;
+  align-items:flex-start;
+  gap:24px;
+  margin-bottom:32px;
+}
+
+.process-step:last-child{
+  margin-bottom:0;
+}
+
+.process-number{
+  position:relative;
+  z-index:2;
+  width:64px;
+  height:64px;
+  min-width:64px;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:1rem;
+  box-shadow:0 10px 24px rgba(25,135,84,0.22);
+}
+
+.process-card{
+  background:#fff;
+  border-radius:20px;
+  padding:28px 24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  flex:1;
+  transition:all 0.3s ease;
+}
+
+.process-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+.process-card h4{
+  font-size:1.2rem;
+  font-weight:700;
+  margin-bottom:12px;
+  color:var(--dark);
+}
+
+.process-card p{
+  margin:0;
+}
+
+.process-values{
+  background:#fff;
+}
+
+.process-value-card{
+  background:#fff;
+  border-radius:20px;
+  padding:30px 24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:all 0.35s ease;
+  text-align:center;
+}
+
+.process-value-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+.process-value-card i{
+  display:inline-block;
+  font-size:2rem;
+  color:var(--primary);
+  margin-bottom:18px;
+}
+
+.process-value-card h5{
+  font-weight:700;
+  margin-bottom:12px;
+  color:var(--dark);
+}
+
+.process-value-card p{
+  margin-bottom:0;
+}
+
+@media (max-width: 767px){
+  .process-line{
+    left:24px;
+  }
+
+  .process-step{
+    gap:18px;
+  }
+
+  .process-number{
+    width:48px;
+    height:48px;
+    min-width:48px;
+    font-size:0.85rem;
+  }
+
+  .process-card{
+    padding:22px 18px;
+  }
+
+  .process-card h4{
+    font-size:1.08rem;
+  }
+}
