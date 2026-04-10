@@ -173,9 +173,7 @@ p{
   align-items:center;
   justify-content:center;
   text-align:center;
-  background:
-    linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
-    url('../image/hero.jpg') center/cover no-repeat;
+  background:#107040;
   padding:120px 0 80px;
 }
 
@@ -447,9 +445,7 @@ p{
   justify-content:center;
   text-align:center;
   padding:120px 0 70px;
-  background:
-    linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
-    url('../image/about-banner.jpg') center/cover no-repeat;
+  background:#107040;
 }
 
 .page-banner h1{
