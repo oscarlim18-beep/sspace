@@ -52,3 +52,20 @@
     padding:20px;
   }
 }
+
+.info-item div{
+  line-height:1.6;
+  color:#333;
+}
+
+.info-item strong{
+  color:#1b7a4b;
+  font-weight:600;
+}
+
+.office-map-btn{
+  min-width:170px;
+  border-radius:999px;
+  padding:12px 22px;
+  font-weight:600;
+}

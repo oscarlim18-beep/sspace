@@ -14,11 +14,12 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="image/logo.png" class="logo"> Sspace
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="image/logo.png" alt="Sspace Logo" class="logo" />
+        Sspace
+      </a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
@@ -111,10 +112,26 @@
             <span>liefong@squarespacemy.com</span>
           </div>
 
-          <div class="info-item">
-            <i class="bi bi-geo-alt"></i>
-            <span>Kuala Lumpur, Malaysia</span>
-          </div>
+      <div class="info-item align-items-start">
+        <i class="bi bi-geo-alt"></i>
+        <div>
+
+          <strong>KL Region Office</strong><br>
+          Residensi Aradia, 102, Jalan Sibu<br>
+          Taman Wahyu, 68100 Kuala Lumpur<br><br>
+
+          <strong>Kajang Warehouse</strong><br>
+          No.199, Jalan Kajang Jaya 7<br>
+          Taman Kajang Jaya, Kajang<br>
+          Selangor Darul Ehsan 43000, MY<br><br>
+
+          <strong>Philippines Office</strong><br>
+          Square Solutions Construction Corporation<br>
+          Lot 55, Blk 2 Carmona Estates Lantic<br>
+          4116 City of Carmona, Cavite, Philippines
+
+        </div>
+</div>
 
           <div class="mt-4">
             <a href="https://wa.me/60129134121" target="_blank" class="btn btn-whatsapp w-100">
@@ -130,14 +147,22 @@
 </section>
 
 <!-- MAP -->
-<section class="map-section hidden">
+<section class="map-section hidden text-center">
+
+  <div class="mb-3">
+    <button id="btn-kl" class="btn btn-success me-2" onclick="changeMap('kl')">KL Office</button>
+    <button id="btn-kajang" class="btn btn-outline-success" onclick="changeMap('kajang')">Kajang Warehouse</button>
+  </div>
+
   <iframe
-    src="https://maps.google.com/maps?q=Kuala%20Lumpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    id="mapFrame"
+    src="https://maps.google.com/maps?q=Residensi%20Aradia%20Kuala%20Lumpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
     width="100%"
     height="400"
     style="border:0;"
     allowfullscreen=""
   ></iframe>
+
 </section>
 
   <!-- FOOTER -->

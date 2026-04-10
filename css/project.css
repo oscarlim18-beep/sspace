@@ -1,0 +1,104 @@
+/* HERO */
+.project-hero{
+  padding: 180px 0 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.project-hero h1{
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* GALLERY SECTION */
+.project-gallery-section{
+  background: #fff;
+}
+
+/* MASONRY / ORIGINAL IMAGE RATIO */
+.project-grid{
+  column-count: 2;
+  column-gap: 24px;
+}
+
+.project-img{
+  break-inside: avoid;
+  margin-bottom: 24px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: #f5f5f5;
+}
+
+.project-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-img:hover img{
+  transform: scale(1.02);
+}
+
+/* OPTIONAL: disable old forced layout classes if still present in HTML */
+.project-img-xl,
+.project-img-wide{
+  width: 100%;
+}
+
+/* BACK BUTTON */
+.btn-back{
+  padding: 12px 26px;
+  border-radius: 50px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-back:hover{
+  background: #145c45;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px){
+  .project-hero{
+    padding: 160px 0 90px;
+  }
+
+  .project-hero h1{
+    font-size: 2.3rem;
+  }
+
+  .project-grid{
+    column-gap: 18px;
+  }
+
+  .project-img{
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 768px){
+  .project-hero{
+    padding: 145px 0 75px;
+  }
+
+  .project-hero h1{
+    font-size: 2rem;
+  }
+
+  .project-grid{
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  .project-img{
+    margin-bottom: 18px;
+    border-radius: 18px;
+  }
+}

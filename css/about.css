@@ -90,3 +90,45 @@
     width:100%;
   }
 }
+
+.about-3d-card {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-out;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  position: relative;
+  cursor: pointer;
+  margin-right: 100px;
+}
+
+/* Image */
+.about-3d-img {
+  width: 100%;
+  display: block;
+  border-radius: 1.5rem;
+  transform: translateZ(40px);
+}
+
+/* Light reflection layer */
+.about-3d-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255,255,255,0.35),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+/* Hover glow */
+.about-3d-card:hover::before {
+  opacity: 1;
+}

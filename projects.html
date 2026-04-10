@@ -17,119 +17,200 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="image/logo.png" class="logo"> Sspace
-    </a>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="image/logo.png" alt="Sspace Logo" class="logo" />
+        Sspace
+      </a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="about.html">About Us</a></li>
-        <li><a class="nav-link" href="services.html">Services</a></li>
-        <li><a class="nav-link active" href="projects.html">Projects</a></li>
-        <li><a class="nav-link" href="process.html">Process</a></li>
-        <li><a class="nav-link" href="contact.html">Contact Us</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="contact.html" class="btn btn-light nav-cta-btn">Get Quote</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- BANNER -->
-<section class="page-banner projects-banner">
-  <div class="container text-center">
-    <h1>Our Projects</h1>
-    <p>Explore our completed work across different industries and environments.</p>
-  </div>
-</section>
-
-<!-- FILTER -->
-<section class="py-4 text-center">
-  <div class="container">
-    <div class="project-filter">
-      <button class="active" data-filter="all">All</button>
-      <button data-filter="office">Office</button>
-      <button data-filter="fnb">F&B</button>
-      <button data-filter="commercial">Commercial</button>
+  <!-- BANNER -->
+  <section class="page-banner projects-banner">
+    <div class="container text-center">
+      <h1>Our Projects</h1>
+      <p>Explore our completed work across different industries and environments.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECT GRID -->
-<section class="pb-5">
-  <div class="container">
-    <div class="row g-4" id="projectGrid">
-
-      <!-- ITEM -->
-      <div class="col-md-4 project-item office">
-        <div class="project-card">
-          <img src="image/project1.jpg">
-          <div class="project-overlay">
-            <h6>Corporate Office</h6>
-          </div>
-        </div>
+  <!-- FILTER -->
+  <section class="py-4 text-center">
+    <div class="container">
+      <div class="project-filter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="office">Office</button>
+        <button data-filter="fnb">F&B</button>
+        <button data-filter="commercial">Commercial</button>
       </div>
-
-      <div class="col-md-4 project-item fnb">
-        <div class="project-card">
-          <img src="image/project2.jpg">
-          <div class="project-overlay">
-            <h6>Restaurant Interior</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 project-item commercial">
-        <div class="project-card">
-          <img src="image/project3.jpg">
-          <div class="project-overlay">
-            <h6>Retail Space</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 project-item office">
-        <div class="project-card">
-          <img src="image/project4.jpg">
-          <div class="project-overlay">
-            <h6>Workspace Design</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 project-item fnb">
-        <div class="project-card">
-          <img src="image/project5.jpg">
-          <div class="project-overlay">
-            <h6>Cafe Concept</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 project-item commercial">
-        <div class="project-card">
-          <img src="image/project6.jpg">
-          <div class="project-overlay">
-            <h6>Show Unit</h6>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <span class="close">&times;</span>
-  <img id="lightbox-img">
-</div>
+  <!-- PROJECT GRID -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4" id="projectGrid">
+
+        <div class="col-md-4 project-item fnb">
+          <a href="project-full.html" class="project-card">
+            <img src="image/full0.jpg" alt="F&B">
+            <div class="project-overlay">
+              <h6>F&B</h6>
+              <p>FULL FULL HUT</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item fnb">
+          <a href="project-ticco.html" class="project-card">
+            <img src="image/ticco4.jpg" alt="F&B">
+            <div class="project-overlay">
+              <h6>F&B</h6>
+              <p>TICCO TRX</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item fnb">
+          <a href="project-zusm.html" class="project-card">
+            <img src="image/zusm7.jpg" alt="F&B">
+            <div class="project-overlay">
+              <h6>F&B</h6>
+              <p>Zus Philliphine Manila</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item fnb">
+          <a href="project-rich.html" class="project-card">
+            <img src="image/rich0.jpg" alt="Workspace Design">
+            <div class="project-overlay">
+              <h6>F&B</h6>
+              <p>Richeese Factory 1U & TimeSquare
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item fnb">
+          <a href="project-algae.html" class="project-card">
+            <img src="image/atoz1.jpg" alt="Algae Eat">
+            <div class="project-overlay">
+              <h6>F&B</h6>
+              <p>Algae Eats Café</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item fnb">
+          <a href="project-can.html" class="project-card">
+            <img src="image/can00.png" alt="Canton Boy">
+            <div class="project-overlay">
+              <h6>F&B</h6>
+              <p>Canton Boy Mytown</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item fnb">
+          <a href="project-yan.html" class="project-card">
+            <img src="image/yan2.jpg" alt="Yan Thai">
+            <div class="project-overlay">
+              <h6>F&B</h6>
+              <p>Yan Thai Genting</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item commercial">
+          <a href="project-elala.html" class="project-card">
+            <img src="image/elala8.jpg" alt="Elala">
+            <div class="project-overlay">
+              <h6>Commercial</h6>
+              <p>Elala Bukit Jalil</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item commercial">
+          <a href="project-helixshow.html" class="project-card">
+            <img src="image/helixshow1.jpg" alt="Helix2 Show Unit">
+            <div class="project-overlay">
+              <h6>Commercial</h6>
+              <p>Helix2 Show Unit</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 project-item commercial">
+          <a href="project-park.html" class="project-card">
+            <img src="image/park0.jpg" alt="Park One ">
+            <div class="project-overlay">
+              <h6>Commercial</h6>
+              <p>Park One Melawati</p>
+            </div>
+          </a>
+        </div>
+
+                <div class="col-md-4 project-item office">
+          <a href="project-eupe.html" class="project-card">
+            <img src="image/eupe4.jpg" alt="EUPE Office">
+            <div class="project-overlay">
+              <h6>Office</h6>
+              <p>EUPE Office</p>
+            </div>
+          </a>
+        </div>
+
+                <div class="col-md-4 project-item commercial">
+          <a href="project-helixshow.html" class="project-card">
+            <img src="image/helixshow1.jpg" alt="Helix2 Show Unit">
+            <div class="project-overlay">
+              <h6>Commercial</h6>
+              <p>Helix2 Show Unit</p>
+            </div>
+          </a>
+        </div>
+
+                <div class="col-md-4 project-item commercial">
+          <a href="project-helixshow.html" class="project-card">
+            <img src="image/helixshow1.jpg" alt="Helix2 Show Unit">
+            <div class="project-overlay">
+              <h6>Commercial</h6>
+              <p>Helix2 Show Unit</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -146,8 +227,8 @@
     </div>
   </footer>
 
-<script src="js/script.js"></script>
-<script src="js/projects.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/projects.js"></script>
 </body>
 </html>
