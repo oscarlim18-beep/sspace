@@ -153,3 +153,83 @@ function changeMap(location){
     btnKl.classList.add("btn-outline-success");
   }
 }
+
+
+// LIGHTBOX (works for all project images)
+
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".project-img img");
+
+  // Create lightbox elements
+  const lightbox = document.createElement("div");
+  lightbox.classList.add("lightbox");
+
+  const img = document.createElement("img");
+  img.classList.add("lightbox-img");
+
+  const closeBtn = document.createElement("span");
+  closeBtn.classList.add("lightbox-close");
+  closeBtn.innerHTML = "&times;";
+
+  const prevBtn = document.createElement("span");
+  prevBtn.classList.add("lightbox-prev");
+  prevBtn.innerHTML = "&#10094;";
+
+  const nextBtn = document.createElement("span");
+  nextBtn.classList.add("lightbox-next");
+  nextBtn.innerHTML = "&#10095;";
+
+  lightbox.appendChild(img);
+  lightbox.appendChild(closeBtn);
+  lightbox.appendChild(prevBtn);
+  lightbox.appendChild(nextBtn);
+  document.body.appendChild(lightbox);
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    if (index < 0) index = images.length - 1;
+    if (index >= images.length) index = 0;
+
+    currentIndex = index;
+    img.src = images[currentIndex].src;
+    lightbox.classList.add("active");
+  }
+
+  images.forEach((image, index) => {
+    image.addEventListener("click", () => {
+      showImage(index);
+    });
+  });
+
+  // Close
+  closeBtn.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  // Next
+  nextBtn.addEventListener("click", () => {
+    showImage(currentIndex + 1);
+  });
+
+  // Prev
+  prevBtn.addEventListener("click", () => {
+    showImage(currentIndex - 1);
+  });
+
+  // Click outside to close
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
+  });
+
+  // Keyboard support
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("active")) return;
+
+    if (e.key === "Escape") lightbox.classList.remove("active");
+    if (e.key === "ArrowRight") showImage(currentIndex + 1);
+    if (e.key === "ArrowLeft") showImage(currentIndex - 1);
+  });
+});

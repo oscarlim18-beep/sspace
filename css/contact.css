@@ -1,5 +1,7 @@
 .contact-banner{
-  background:#107040;
+    background:
+    linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.56)),
+    url('../image/hero-project.jpg') center/cover no-repeat;
 }
 
 /* FORM */
