@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- MAIN PAGES -->
+  <url><loc>https://qipta.com/</loc></url>
+  <url><loc>https://qipta.com/about.html</loc></url>
+  <url><loc>https://qipta.com/services.html</loc></url>
+  <url><loc>https://qipta.com/projects.html</loc></url>
+  <url><loc>https://qipta.com/contact.html</loc></url>
+  <url><loc>https://qipta.com/process.html</loc></url>
+
+  <!-- PROJECT PAGES -->
+  <url><loc>https://qipta.com/project-agile.html</loc></url>
+  <url><loc>https://qipta.com/project-algae.html</loc></url>
+  <url><loc>https://qipta.com/project-brew.html</loc></url>
+  <url><loc>https://qipta.com/project-can.html</loc></url>
+  <url><loc>https://qipta.com/project-elala.html</loc></url>
+  <url><loc>https://qipta.com/project-eupe.html</loc></url>
+  <url><loc>https://qipta.com/project-full.html</loc></url>
+  <url><loc>https://qipta.com/project-guange.html</loc></url>
+  <url><loc>https://qipta.com/project-guanp.html</loc></url>
+  <url><loc>https://qipta.com/project-guans.html</loc></url>
+  <url><loc>https://qipta.com/project-helix2.html</loc></url>
+  <url><loc>https://qipta.com/project-helixshow.html</loc></url>
+  <url><loc>https://qipta.com/project-oomphbj.html</loc></url>
+  <url><loc>https://qipta.com/project-oomphmr.html</loc></url>
+  <url><loc>https://qipta.com/project-park.html</loc></url>
+  <url><loc>https://qipta.com/project-rich.html</loc></url>
+  <url><loc>https://qipta.com/project-santa.html</loc></url>
+  <url><loc>https://qipta.com/project-ticco.html</loc></url>
+  <url><loc>https://qipta.com/project-yan.html</loc></url>
+  <url><loc>https://qipta.com/project-z.html</loc></url>
+  <url><loc>https://qipta.com/project-zusm.html</loc></url>
+  <url><loc>https://qipta.com/project-zuspd.html</loc></url>
+
+</urlset>

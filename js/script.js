@@ -38,13 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
     revealElements.forEach((el) => observer.observe(el));
   }
 
-  // Active nav link by page
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+// Active nav link by page
+const currentPath = window.location.pathname;
+const currentPage = currentPath.split("/").pop() || "index.html";
 
-  navLinks.forEach((link) => {
-    const linkPage = link.getAttribute("href");
-    link.classList.toggle("active", linkPage === currentPage);
-  });
+navLinks.forEach((link) => {
+  const linkPage = link.getAttribute("href");
+
+  const isActive =
+    linkPage === currentPage ||
+    currentPath.endsWith(linkPage) ||
+    currentPath === "/" && linkPage === "index.html";
+
+  link.classList.toggle("active", isActive);
+});
 
   // Animated hamburger toggler
   if (customToggler && navbarCollapse) {
