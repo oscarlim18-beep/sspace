@@ -1,7 +1,12 @@
 .contact-banner{
-    background:
+  background:
     linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.56)),
     url('../image/hero-project.jpg') center/cover no-repeat;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+  background:#fff;
 }
 
 /* FORM */
@@ -10,12 +15,25 @@
   padding:30px;
   border-radius:18px;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  border:1px solid rgba(0,0,0,0.04);
+}
+
+.contact-form-box h3{
+  color:var(--dark);
+  font-weight:700;
 }
 
 .form-control{
   border-radius:12px;
   padding:14px;
   border:1px solid #ddd;
+  font-size:1rem;
+  min-height:52px;
+}
+
+textarea.form-control{
+  min-height:auto;
+  resize:vertical;
 }
 
 .form-control:focus{
@@ -26,6 +44,11 @@
 /* INFO */
 .contact-info{
   padding:10px;
+}
+
+.contact-info h3{
+  color:var(--dark);
+  font-weight:700;
 }
 
 .info-item{
@@ -39,18 +62,7 @@
 .info-item i{
   color:var(--primary);
   font-size:1.2rem;
-}
-
-/* MAP */
-.map-section iframe{
-  display:block;
-}
-
-/* RESPONSIVE */
-@media(max-width:767px){
-  .contact-form-box{
-    padding:20px;
-  }
+  flex-shrink:0;
 }
 
 .info-item div{
@@ -63,9 +75,27 @@
   font-weight:600;
 }
 
+/* MAP */
+.map-section iframe{
+  display:block;
+}
+
 .office-map-btn{
   min-width:170px;
   border-radius:999px;
   padding:12px 22px;
   font-weight:600;
+}
+
+/* RESPONSIVE */
+@media (max-width:767px){
+  .contact-form-box{
+    padding:20px;
+  }
+
+  .office-map-btn{
+    min-width:auto;
+    width:100%;
+    margin:0 0 10px 0 !important;
+  }
 }

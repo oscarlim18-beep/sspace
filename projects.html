@@ -3,13 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | Sspace</title>
+  <title>Projects | Square Space</title>
+
+  <meta
+    name="description"
+    content="Explore Square Space projects across developer, retail, and office environments in Malaysia and Southeast Asia."
+  />
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -20,21 +31,23 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <img src="image/logo.png" alt="Sspace Logo" class="logo" />
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html" aria-label="Square Space Home">
+        <img src="image/logo.png" alt="Square Space Logo" class="logo" />
       </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navMenu"
-        aria-controls="navMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<button
+  class="navbar-toggler custom-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navMenu"
+  aria-controls="navMenu"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-lg-center">
@@ -56,7 +69,9 @@
   <section class="page-banner projects-banner">
     <div class="container text-center">
       <h1>Our Projects</h1>
-      <p>A showcase of completed spaces delivered across office, commercial, retail, and F&amp;B environments.</p>
+      <p>
+        A showcase of completed spaces delivered across developer, retail, and office environments.
+      </p>
     </div>
   </section>
 
@@ -66,8 +81,8 @@
       <div class="project-filter">
         <button class="active" data-filter="all">All</button>
         <button data-filter="office">Office</button>
-        <button data-filter="fnb">F&amp;B</button>
-        <button data-filter="commercial">Commercial</button>
+        <button data-filter="retail">Retail</button>
+        <button data-filter="developer">Developer</button>
       </div>
     </div>
   </section>
@@ -77,101 +92,101 @@
     <div class="container">
       <div class="row g-4" id="projectGrid">
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-full.html" class="project-card">
             <img src="image/full0.jpg" alt="Full Full Hut">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>FULL FULL HUT</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-ticco.html" class="project-card">
             <img src="image/ticco4.jpg" alt="TICCO TRX">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>TICCO TRX</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-zusm.html" class="project-card">
-            <img src="image/zusm7.jpg" alt="Zus Philliphine Manila">
+            <img src="image/zusm7.jpg" alt="Zus Philippine Manila">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
-              <p>Zus Philliphine Manila</p>
+              <h6>Retail</h6>
+              <p>Zus Philippine Manila</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-rich.html" class="project-card">
             <img src="image/rich0.jpg" alt="Richeese Factory 1U & TimeSquare">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Richeese Factory 1U &amp; TimeSquare</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-algae.html" class="project-card">
             <img src="image/atoz1.jpg" alt="Algae Eats Café">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Algae Eats Café</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-can.html" class="project-card">
             <img src="image/can00.png" alt="Canton Boy Mytown">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Canton Boy Mytown</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-yan.html" class="project-card">
             <img src="image/yan2.jpg" alt="Yan Thai Genting">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Yan Thai Genting</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item commercial">
+        <div class="col-md-4 project-item retail">
           <a href="project-elala.html" class="project-card">
             <img src="image/elala8.jpg" alt="Elala Bukit Jalil">
             <div class="project-overlay">
-              <h6>Commercial</h6>
+              <h6>Developer</h6>
               <p>Elala Bukit Jalil</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item commercial">
+        <div class="col-md-4 project-item developer">
           <a href="project-helixshow.html" class="project-card">
             <img src="image/helixshow1.jpg" alt="Helix2 Show Unit">
             <div class="project-overlay">
-              <h6>Commercial</h6>
+              <h6>Developer</h6>
               <p>Helix2 Show Unit</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item commercial">
+        <div class="col-md-4 project-item developer">
           <a href="project-park.html" class="project-card">
             <img src="image/park0.jpg" alt="Park One Melawati">
             <div class="project-overlay">
-              <h6>Commercial</h6>
+              <h6>Developer</h6>
               <p>Park One Melawati</p>
             </div>
           </a>
@@ -187,111 +202,111 @@
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-brew.html" class="project-card">
             <img src="image/Brew0.jpg" alt="Brew & Bread Taman Desa">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Brew &amp; Bread Taman Desa</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-guanp.html" class="project-card">
             <img src="image/guan1.jpg" alt="Guan's Petaling Jaya">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Guan's Petaling Jaya</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-guans.html" class="project-card">
             <img src="image/guans1.jpg" alt="Guan's Sabah">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Guan's Sabah</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-guange.html" class="project-card">
             <img src="image/guange1.jpg" alt="Guang Eko Cheras">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Guang Eko Cheras</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item commercial">
+        <div class="col-md-4 project-item retail">
           <a href="project-z.html" class="project-card">
             <img src="image/z0.jpg" alt="Z-Aesthetics">
             <div class="project-overlay">
-              <h6>Commercial</h6>
+              <h6>Developer</h6>
               <p>Z-Aesthetics</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item commercial">
+        <div class="col-md-4 project-item retail">
           <a href="project-santa.html" class="project-card">
             <img src="image/santa3.jpg" alt="Santa Central I City Mall, Shah Alam">
             <div class="project-overlay">
-              <h6>Commercial</h6>
+              <h6>Developer</h6>
               <p>Santa Central I City Mall, Shah Alam</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item commercial">
+        <div class="col-md-4 project-item developer">
           <a href="project-agile.html" class="project-card">
             <img src="image/Agile0.jpg" alt="Agile Bukit Bintang">
             <div class="project-overlay">
-              <h6>Commercial</h6>
+              <h6>Developer</h6>
               <p>Agile Bukit Bintang</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-oomphbj.html" class="project-card">
             <img src="image/oomph6.jpg" alt="Oomph Bukit Jalil">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Oomph Bukit Jalil</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-oomphmr.html" class="project-card">
             <img src="image/oomphm3.jpg" alt="Oomph Megah Rise">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Oomph Megah Rise</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item fnb">
+        <div class="col-md-4 project-item retail">
           <a href="project-zuspd.html" class="project-card">
             <img src="image/zuspd5.jpeg" alt="Zus Port Dickson">
             <div class="project-overlay">
-              <h6>F&amp;B</h6>
+              <h6>Retail</h6>
               <p>Zus Port Dickson</p>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 project-item commercial">
+        <div class="col-md-4 project-item developer">
           <a href="project-helix2.html" class="project-card">
             <img src="image/helix2.jpg" alt="Helix2 by EUPE PJ SOUTH">
             <div class="project-overlay">
-              <h6>Commercial</h6>
+              <h6>Developer</h6>
               <p>Helix2 by EUPE PJ SOUTH</p>
             </div>
           </a>
@@ -309,7 +324,7 @@
       <div class="social-icons">
         <a href="https://www.facebook.com/search/top?q=square%20space" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/squarespacesolutions/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.xiaohongshu.com/user/profile/677606f5000000001200180e?xsec_token=ABdKXQ_x9fU9R-Ji03y0wXoHgZ3-bXBexXTKyEIt0SGW4%3D&xsec_source=pc_search" target="_blank" aria-label="Xiaohongshu">
+        <a href="https://www.xiaohongshu.com/user/profile/677606f5000000001200180e?xsec_token=ABdKXQ_x9fU9R-Ji03y0wXoHgZ3-bXBexXTKyEIt0SGW4%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer" aria-label="Xiaohongshu">
           <img src="image/xiaohongshu.png" alt="Xiaohongshu" class="xhs-icon" />
         </a>
       </div>
