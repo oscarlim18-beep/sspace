@@ -125,47 +125,51 @@ p{
   color:var(--primary-dark);
 }
 
-/* NAVBAR */
+/* NAVBAR (ALWAYS GREEN) */
 .navbar{
-  padding:18px 0;
-  background:white;
+  padding:5px 0;
+  background:var(--primary);
   transition:all 0.35s ease;
 }
 
+/* optional scroll effect (slightly tighter) */
 .navbar.scrolled{
-  background:white;
-  backdrop-filter:blur(10px);
-  box-shadow:0 8px 24px rgba(0,0,0,0.15);
   padding:12px 0;
+  box-shadow:0 8px 24px rgba(0,0,0,0.12);
 }
 
+/* BRAND */
 .navbar-brand{
-  font-size:1.45rem;
-  letter-spacing:0.5px;
-  color:var(--white) !important;
+  display:flex;
+  align-items:center;
 }
 
+/* LOGO */
 .logo{
-  height:48px;
+  height:70px;
   width:auto;
+  object-fit:contain;
   margin-right:10px;
 }
 
+/* NAV LINKS */
 .navbar-nav .nav-link{
   position:relative;
   margin-left:18px;
-  color:var(--black) !important;
+  color:#ffffff !important;
   font-family:'Inter',sans-serif;
   font-weight:500;
   letter-spacing:0.3px;
   transition:0.3s;
 }
 
+/* HOVER + ACTIVE */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active{
-  color:var(--black) !important;
+  color:#ffffff !important;
 }
 
+/* UNDERLINE */
 .navbar-nav .nav-link::after{
   content:"";
   position:absolute;
@@ -173,7 +177,7 @@ p{
   bottom:-2px;
   width:0;
   height:2px;
-  background:var(--black);
+  background:#ffffff;
   transition:width 0.3s ease;
 }
 
@@ -618,7 +622,7 @@ p{
 /* RESPONSIVE */
 @media (max-width:991px){
   .navbar{
-    background:#ffffff;
+    background:var(--primary);
   }
 
   .navbar-nav{
@@ -628,16 +632,16 @@ p{
   .navbar-nav .nav-link{
     margin-left:0;
     margin-bottom:10px;
-    color:black !important;
+    color:#ffffff !important;
   }
 
   .navbar-nav .nav-link:hover,
   .navbar-nav .nav-link.active{
-    color:black !important;
+    color:#ffffff !important;
   }
 
   .navbar-nav .nav-link::after{
-    color:black !important;
+    background:#ffffff;
   }
 
   .section-title{
